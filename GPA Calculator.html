@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:6881/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.8.1.1];shiny-javascript[1.8.1.1];bootstrap[3.4.1]</script>
+<script src="./GPA Calculator_files/jquery.min.js.indir"></script>
+<link href="./GPA Calculator_files/shiny.min.css" rel="stylesheet">
+<script src="./GPA Calculator_files/shiny.min.js.indir"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./GPA Calculator_files/bootstrap.min.css" rel="stylesheet">
+<link href="./GPA Calculator_files/bootstrap-accessibility.min.css" rel="stylesheet">
+<script src="./GPA Calculator_files/bootstrap.min.js.indir"></script>
+<script src="./GPA Calculator_files/bootstrap-accessibility.min.js.indir"></script>  <title>GPA Calculator</title>
+<link href="./GPA Calculator_files/selectize.bootstrap3.css" rel="stylesheet" type="text/css"><script src="./GPA Calculator_files/selectize.min.js.indir"></script><script src="./GPA Calculator_files/selectize-plugin-a11y.min.js.indir"></script></head>
+<body>
+  <div class="container-fluid">
+    <h2>GPA Calculator</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="well" role="complementary">
+          <button id="add_btn" type="button" class="btn btn-default action-button shiny-bound-input">Add Course</button>
+          <button id="calculate_gpa" type="button" class="btn btn-default action-button shiny-bound-input">Calculate GPA</button>
+          <hr>
+          <div id="courses_ui" class="shiny-html-output shiny-bound-output" aria-live="polite"><div class="row">
+  <div class="col-sm-6">
+    <div class="form-group shiny-input-container">
+      <label class="control-label" id="credit_1-label" for="credit_1">Credit Hours</label>
+      <input id="credit_1" type="number" class="shiny-input-number form-control shiny-bound-input" value="3" min="1">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group shiny-input-container">
+      <label class="control-label" id="grade_1-label" for="grade_1-selectized">Grade</label>
+      <div>
+        <select id="grade_1" class="shiny-input-select selectized shiny-bound-input" tabindex="-1" style="display: none;">
+
+
+
+
+
+
+
+<option value="4" selected="selected">AA</option></select><div class="shiny-input-select selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="4">AA</div><input type="text" autocomplete="new-password" autofill="no" tabindex="" id="grade_1-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="gab6b94num" style="width: 4px;"></div><div class="single selectize-dropdown shiny-input-select plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" tabindex="-1" role="listbox" id="gab6b94num"></div></div></div>
+        <script type="application/json" data-for="grade_1" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </form>
+      </div>
+      <div class="col-sm-8" role="main">
+        <h4>Your GPA is:</h4>
+        <div id="gpa_output" class="shiny-text-output shiny-bound-output" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div></body></html>
